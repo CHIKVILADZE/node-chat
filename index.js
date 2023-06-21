@@ -1,6 +1,6 @@
 const express = require('express');
 const cors = require('cors');
-import axios from 'axios';
+const axios = require('axios');
 require('dotenv').config();
 
 const app = express();
@@ -21,6 +21,6 @@ app.post('/authenticate', async (req, res) => {
   }
 });
 
-app.listen(process.env.PORT, () => {
-  console.log(`Server is running on port ${process.env.PORT}`);
+app.listen(3001, () => {
+  console.log('Server is running on port 300');
 });
