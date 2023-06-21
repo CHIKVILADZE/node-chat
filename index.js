@@ -21,6 +21,6 @@ app.post('/authenticate', async (req, res) => {
   }
 });
 
-app.listen(3001, () => {
-  console.log('Server is running on port 300');
+app.listen(process.env.PORT, () => {
+  console.log(`Server is running on port ${process.env.PORT}`);
 });
